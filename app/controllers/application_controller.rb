@@ -37,7 +37,7 @@ get '/recipes/:id/edit' do  #load edit form
     erb :edit
   end
 
-patch '/articles/:id' do #edit action
+patch '/recipe/:id' do #edit action
   @article = Article.find_by_id(params[:id])
   @article.title = params[:title]
   @article.content = params[:content]

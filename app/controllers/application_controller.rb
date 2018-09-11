@@ -46,4 +46,8 @@ patch '/recipes/:id' do #edit action
   redirect to "/recipes/#{@recipe.id}"
 end
 
+delete '/recipes/:id/delete' do
+end
+end
+
 end

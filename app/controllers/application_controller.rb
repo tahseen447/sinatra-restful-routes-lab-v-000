@@ -32,7 +32,7 @@ post '/recipes' do
   redirect to "/recipes/#{@recipe.id}"
 end
 
-get '/articles/:id/edit' do  #load edit form
+get '/recipes/:id/edit' do  #load edit form
     @article = Article.find_by_id(params[:id])
     erb :edit
   end

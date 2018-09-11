@@ -51,6 +51,5 @@ delete '/recipes/:id/delete' do
   @recipe.delete
   redirect to '/recipes'
 end
-end
 
 end

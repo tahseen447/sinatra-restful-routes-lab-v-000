@@ -1,5 +1,5 @@
 class ChangeCookTimeType < ActiveRecord::Migration
   def change
-    change_colum :recipes, :cook_time, :string
+    change_column :recipes, :cook_time, :string
   end
 end

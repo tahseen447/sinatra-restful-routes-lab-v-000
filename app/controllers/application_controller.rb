@@ -37,13 +37,13 @@ get '/recipes/:id/edit' do  #load edit form
     erb :edit
   end
 
-patch '/recipe/:id' do #edit action
+patch '/recipes/:id' do #edit action
   @recipe = Recipe.find_by_id(params[:id])
   @recipe.name = params[:name]
   @recipe.ingredients = params[:ingredients]
   @recipe.cook_time = params[:cook_time]
   @recipe.save
-  redirect to "/articles/#{@article.id}"
+  redirect to "/recipes/#{@recipe.id}"
 end
 
 end
